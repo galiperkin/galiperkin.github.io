@@ -26,6 +26,7 @@ body {
 
 /* Container */
 .container {
+  
   width: 90%;
   max-width: 1200px;
   margin: auto;
@@ -183,6 +184,7 @@ header nav ul.nav-links li a:hover {
 
 .project-card {
   background-color: white;
+  cursor: pointer;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
@@ -191,6 +193,8 @@ header nav ul.nav-links li a:hover {
 
 .project-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+    
 }
 
 .project-card h3 {
@@ -436,7 +440,7 @@ header nav ul.nav-links li a:hover {
 
 /* Contact Section */
 #contact {
-  background-color: var(--light-grey);
+  background-color: var(--background-color);
   padding: 60px 0;
 }
 
@@ -495,6 +499,9 @@ header nav ul.nav-links li a:hover {
 
 .social-links a:hover {
   color: var(--primary-color);
+}
+#contact{
+  
 }
 
 #contact .button {
