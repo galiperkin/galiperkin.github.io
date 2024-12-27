@@ -7,7 +7,7 @@ const projects=[
         "Flutter frontend of the WEB3 social media app was implemented.",
         "WEB3 integration was conducted with backend."
       ],
-      "logo": "images/project/moseiki.jpg"
+      "logo": "moseiki.png"
     },
     {
       "name": "JConnect: Tinder like business social media",
@@ -15,7 +15,7 @@ const projects=[
         "This project aims to help professionals to match and make business. They can be matched based on their interests, roles and location.",
         "Instant messaging is implemented on Flutter with using streaming and websocket on Laravel backend."
       ],
-      "logo": "images/project/jconnect.jpg"
+      "logo": "jconnect.png"
     },
     {
       "name": "PopOff – For Students: Tinder like social media for university students in the USA",
@@ -23,7 +23,7 @@ const projects=[
         "Only students with the university mail with edu domain could use the application. It helped students to get to know each other based on their interests, hobbies, music taste etc.",
         "Transformed state management from bloc to GetX to implement VIPER architecture."
       ],
-      "logo": "images/project/popoff-for-students.jpg"
+      "logo": "popoff.png"
     },
     {
       "name": "2Solar: Belgium based solar panel systems installment startup.",
@@ -31,7 +31,7 @@ const projects=[
         "Digital transformation of the solar panel system installment process starting from the customers’ target buildings’ inspections to post installment delivery.",
         "Utilized GoogleMaps and MapTiler for map manipulation to place solar panels on top of roofs."
       ],
-      "logo": "images/project/2solar.jpg"
+      "logo": "2solar.png"
     },
     {
       "name": "Europe Aid Foundation: Netherlands based charity",
@@ -42,7 +42,7 @@ const projects=[
         "Developed PDF creation and manipulation alongside with Excel import-export features to easily handle donation data.",
         "Integrated the Exact Account Management System"
       ],
-      "logo": "images/project/europe-aid-foundation.jpg"
+      "logo": "aidef.png"
     },
     {
       "name": "Doculoud: Germany based startup like Adobe scan",
@@ -50,7 +50,7 @@ const projects=[
         "Providing document management system via mobile application.",
         "Implemented customers’ scanning feature requests with using native Swift and Kotlin."
       ],
-      "logo": "images/project/doculoud.jpg"
+      "logo": "doculoud.png"
     },
     {
       "name": "Flier: social media for private & public events",
@@ -184,15 +184,13 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
         const projectCard = `
             <div class="project-card">
                 <img 
-                    src="images/${project.image}" 
+                    src="./images/projects/${project.logo}" 
                     alt="${project.name}" 
                     class="project-image"
                 >
                 <div class="project-content">
                     <h3>${project.name}</h3>
-                    <p>${project.overview}</p>
-                    
-                
+                    <p>${project.details[0]}</p>
                 </div>
             </div>
         `;
@@ -202,22 +200,5 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
   
   document.addEventListener('DOMContentLoaded', () => {
     loadProjects();
-    fetch('projects/projects.json')
-      .then(response => response.json())
-      .then(data => {
-        const projectGrid = document.getElementById('project-grid');
-        data.forEach(project => {
-          const projectCard = document.createElement('div');
-          projectCard.classList.add('project-card');
-  
-          projectCard.innerHTML = `
-            <img src="${project.logo}" alt="${project.name} Logo" class="project-logo">
-            <h3>${project.name}</h3>
-            <p>${project.details[0]}</p>
-            <a href="${project.name.toLowerCase().split(':')[0].replace(/\s+/g, '-')}.html" class="button">View Project</a>
-          `;
-          projectGrid.appendChild(projectCard);
-        });
-      })
-      .catch(error => console.error('Error loading projects:', error));
+    
   });
