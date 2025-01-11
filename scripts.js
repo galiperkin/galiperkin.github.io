@@ -17,14 +17,7 @@ const projects=[
       ],
       "logo": "jconnect.png"
     },
-    {
-      "name": "PopOff – For Students: Tinder like social media for university students in the USA",
-      "details": [
-        "Only students with the university mail with edu domain could use the application. It helped students to get to know each other based on their interests, hobbies, music taste etc.",
-        "Transformed state management from bloc to GetX to implement VIPER architecture."
-      ],
-      "logo": "popoff.png"
-    },
+
     {
       "name": "2Solar: Belgium based solar panel systems installment startup.",
       "details": [
@@ -58,7 +51,7 @@ const projects=[
         "Developed a platform, helping users to attend to both public and private events, using Flutter and Laravel.",
         "Users can connect with each other and notify them on newly created public, private or close friend events. They can also share stories on events they attended."
       ],
-      "logo": "images/project/flier.jpg"
+      "logo": "flier.png"
     },
     {
       "name": "FreelancerCRM: CRM for freelancers",
@@ -66,7 +59,7 @@ const projects=[
         "This projects aim is to help freelancers to organize their income, outcome, projects and customers.",
         "This project was available on iOS, Android, MacOS & Web."
       ],
-      "logo": "images/project/freelancercrm.jpg"
+      "logo": "fcrm.png"
     },
     {
       "name": "helo!: Startup ecosystem platform",
@@ -74,7 +67,7 @@ const projects=[
         "Developed a platform for startup ecosystem where startups and investors meet alongsidge with events, perks and connections.",
         "Implemented instant messaging with using websocket."
       ],
-      "logo": "images/project/helo.jpg"
+      "logo": "helo.png"
     },
     {
       "name": "RepairFinder: Germany based marketplace for repairmen (mobile device repair shops)",
@@ -82,7 +75,7 @@ const projects=[
         "Implemented three different websites, Customer, Workshop and Admin, with using VueJS with Laravel backend.",
         "Customer and Workshop users also have mobile application developed with Flutter with notification and streaming. Workshops monitor the incoming requests with using socket for instant connection."
       ],
-      "logo": "images/project/repairfinder.jpg"
+      "logo": "repairfinder.png"
     },
     {
       "name": "Garantimo: E-warranty management platform from Sabancı ARF",
@@ -91,7 +84,7 @@ const projects=[
         "This project was aiming to reduce the hard copy of warranty papers to find a digital solution to keep and store warranty papers.",
         "Sabancı ARF is the internal startup program of the Sabancı Holding."
       ],
-      "logo": "images/project/garantimo.jpg"
+      "logo": "garantimo.png"
     },
     {
       "name": "Otorepa: B2B Marketplace for auto spare parts",
@@ -99,7 +92,7 @@ const projects=[
         "I have auto spare parts domain knowledge and work with big data while structuring the database.",
         "Mobile application and web platform were helping customers to easily upload their products and observe the end-to-end shipping process."
       ],
-      "logo": "images/project/otorepa.jpg"
+      "logo": "otorepa.png"
     },
     {
       "name": "Fundle: Game library app like Roblox",
@@ -107,7 +100,7 @@ const projects=[
         "Integrated Unity application into the Flutter application.",
         "Dynamic link and notifications features helped customers to enhance"
       ],
-      "logo": "images/project/fundle.jpg"
+      "logo": "fundle.png"
     },
     {
       "name": "Drool: TikTok like social media app for food",
@@ -116,7 +109,7 @@ const projects=[
         "Users share recipes for the food they are preparing with how to sections and ingredients. They can follow each other and make donations.",
         "Integrated Stripe for donations."
       ],
-      "logo": "images/project/drool.jpg"
+      "logo": "drool.png"
     },
     {
       "name": "Kuyumcumuz: Marketplace for jewelry store",
@@ -124,7 +117,7 @@ const projects=[
         "Three different user roles involving in the project to list and sell both second and brand-new jewelries.",
         "VueJS website with Laravel backend have been used to build this project."
       ],
-      "logo": "images/project/kuyumcumuz.jpg"
+      "logo": "kuyumcumuz.png"
     },
     {
       "name": "Dr. Moku: Duolingo like language learning app",
@@ -133,21 +126,29 @@ const projects=[
         "Flutter In App Purchase package is used for implementing the IAP on both iOS and Android.",
         "Users can learn new languages with quizzes, reading, listening and writing sections. Also, special contents created by the customer help people to memorize words and letters in easier way."
       ],
-      "logo": "images/project/dr-moku.jpg"
+      "logo": "drmoku.png"
     },
     {
       "name": "Kidu: Uber like transportation application for kids from Sabancı ARF",
       "details": [
         "This project has two mobile applications and backend. Child & Parent application and Driver applications. Google Map is used to let parents to monitor the current ride’s location instantly by using streaming."
       ],
-      "logo": "images/project/kidu.jpg"
+      "logo": "kidu.png"
+    },
+    {
+      "name": "PopOff – For Students: Tinder like social media for university students in the USA",
+      "details": [
+        "Only students with the university mail with edu domain could use the application. It helped students to get to know each other based on their interests, hobbies, music taste etc.",
+        "Transformed state management from bloc to GetX to implement VIPER architecture."
+      ],
+      "logo": "popoff.png"
     },
     {
       "name": "Uzmanparca: E-Commerce for auto spare parts",
       "details": [
         "E-commerce platform is implemented to help users to easily buy a required auto spare part for their car. They can select their car with brand, model and year values to find the suitable spare parts in easier way."
       ],
-      "logo": "images/project/uzmanparca.jpg"
+      "logo": "uzmanparca.png"
     },
     
   ];
