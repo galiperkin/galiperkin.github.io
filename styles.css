@@ -144,9 +144,13 @@ header nav ul.nav-links li a:hover {
 }
 
 .about-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Remove gap for Safari compatibility */
 }
 
 .about-content img {
@@ -155,10 +159,12 @@ header nav ul.nav-links li a:hover {
   object-fit: cover;
   border-radius: 50%;
   flex-shrink: 0;
+  margin-right: 2rem; /* Use margin instead of gap */
 }
 
 .about-text {
   flex: 1;
+  width: 100%;
 }
 
 .about-text p {
@@ -582,16 +588,20 @@ footer {
 
   /* Stack About Section Content */
   .about-content {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
-    gap: 1rem;
   }
 
   .about-content img {
     width: 120px;
     height: 120px;
-    margin-bottom: 1rem;
+    margin: 0 0 1rem 0; /* Stack image above text, add bottom margin */
   }
 
   .about-text {
